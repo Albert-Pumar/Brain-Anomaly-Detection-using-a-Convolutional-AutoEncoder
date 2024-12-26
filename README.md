@@ -10,7 +10,7 @@ This project presents a method for detecting brain gliomas using a three-dimensi
 
 HOW TO RUN THE CODE?
 Once the RSNA-MICCAI dataset ([RSNA-MICCAI Brain Tumor Radiogenomic Classification | Kaggle](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/data)) has been downloaded, there must be 4 files, of which only two are used: the train directory and the train_labels.csv file. In the train set there is a subdirectory for each patient and within each of these subdirectories there are 4 folders containing the DICOM (2D) files for each type of MRI (only 3 are used in this project). The train_labels.csv file contains the labels for each patient to know if they are healthy or contain a glioma. With the preprocessing.py file we separate the healthy patients and those with glioma and also convert the 2D images into 3D volumes.
-On the other hand, the rest of the code (the experiments) is in the Jupyter file AE_FINAL_VERSION.ipynb, where their operation and the reasoning behind the functions are already described. For a correct execution of the code, the following libraries are needed:
+On the other hand, the rest of the code (the experiments) is in the Jupyter file Anomaly_Brain_Detection.ipynb, where the behavior and the reasoning behind the functions are already described. For a correct execution of the code, the following libraries are needed:
 - Torch and torchvision for everything related to the models and tensors.
 - Json and os for the treatment of files and directories.
 - Matplotlib for making the graphics.
@@ -22,4 +22,4 @@ On the other hand, the rest of the code (the experiments) is in the Jupyter file
 - Optuna for the optimization of classifier parameters.
 - Imblearn for balancing the subsets.
 
-ATTENTION: The code of this project is currently only available in Spanish. For any further questions, feel free to contact me on my email address: apumarb@gmail.com
+ATTENTION: The comments of the code of this project are currently only available in Spanish. For any further questions, feel free to contact me on my email address: apumarb@gmail.com
